@@ -11,7 +11,7 @@ class ResourceManager
     public function getConfig(): \Luracast\Config\Config
     {
         if (!isset($this->config)) {
-            $dotenv = new \Dotenv\Dotenv(PROJECT_ROOT_DIR . '/..');
+            $dotenv = new \Dotenv\Dotenv(PROJECT_ROOT_DIR . '/..', 'config.txt');
             $dotenv->overload();
             $dotenv->required(['EMAIL', 'PASSWORD', 'TIMEZONE', 'COUNTRY_ID', 'SERVICE_PROVIDER_ID'])->notEmpty();
             $this->config = \Luracast\Config\Config::init(PROJECT_ROOT_DIR . '/config');
