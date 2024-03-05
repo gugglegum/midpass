@@ -83,7 +83,7 @@ class ConfirmQueueCommand extends AbstractCommand
         $this->logger->pushHandler(new PsrHandler($consoleLogger));
 
         // Logger: File
-        $logFile = PROJECT_ROOT_DIR . '/../logs/command-queue.log';
+        $logFile = PROJECT_ROOT_DIR . '/../logs/confirm-queue.log';
         $streamHandler = new StreamHandler($logFile, Logger::DEBUG);
         $outputFormat = "%datetime% %message%\n";
         $streamHandler->setFormatter(new LineFormatter($outputFormat, "Y-m-d H:i:s", true, true));
