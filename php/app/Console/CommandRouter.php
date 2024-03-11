@@ -8,10 +8,11 @@ class CommandRouter
     public static string $commandClassNamespace = 'App\\Console\\Commands\\';
 
     public static array $commands = [
-        \App\Console\Commands\HelpCommand::class => 'Show brief help and list of commands',
-        \App\Console\Commands\TestCommand::class => 'Just prints Hello',
         \App\Console\Commands\CaptchaCommand::class => 'Captcha solve',
         \App\Console\Commands\ConfirmQueueCommand::class => 'Confirm foreign passport in queue list',
+
+        \App\Console\Commands\HelpCommand::class => 'Show brief help and list of commands',
+        \App\Console\Commands\TestCommand::class => 'Just prints Hello',
     ];
 
     public static function route(string $command): string

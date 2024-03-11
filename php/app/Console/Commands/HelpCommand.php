@@ -13,7 +13,7 @@ class HelpCommand extends AbstractCommand
      */
     public function __invoke(): ?int
     {
-        echo "Usage:\n\tphp console.php <action> [<arguments...>]\n\n";
+        echo "Usage:\n\tphp console.php <command> [<arguments...>]\n\n";
         echo "Available commands:\n\n";
 
         $commands = [];
