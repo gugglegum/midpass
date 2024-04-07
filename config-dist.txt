@@ -4,6 +4,7 @@ EMAIL=
 PASSWORD=
 
 # Если вы в Грузии, то ничего ниже трогать не нужно
+# Таймзона
 TIMEZONE=Asia/Tbilisi
 # Грузия
 COUNTRY_ID=88655495-3b8c-f56d-5337-0f2743a7bfed
