@@ -261,13 +261,13 @@ class ConfirmQueueCommand extends AbstractCommand
 //        file_put_contents(PROJECT_ROOT_DIR . '/login_form.html', $content);
 //        $content = file_get_contents(PROJECT_ROOT_DIR . '/login_form.html');
 
-        if (preg_match('|<div id="captchaError" class="registerForm">(.*)</div>|iuU', $content, $m)) {
+        if (preg_match('|<div id="captchaError" class="registerForm">(.*)</div>|iusU', $content, $m)) {
             $errorMessage = html_entity_decode(trim(strip_tags($m[1])), ENT_QUOTES);
             if ($errorMessage != '') {
                 throw new \Exception("CAPTCHA error: " . $errorMessage);
             }
         }
-        if (preg_match('|<span class="field-validation-error">(.*)</span>|iuU', $content, $m)) {
+        if (preg_match('|<span class="field-validation-error">(.*)</span>|iusU', $content, $m)) {
             $errorMessage = html_entity_decode(trim(strip_tags($m[1])), ENT_QUOTES);
             throw new PermanentException("Login form error: " . $errorMessage);
         }
