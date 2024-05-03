@@ -16,7 +16,6 @@
 
  * `libcrypto-3-x64.dll`
  * `libssl-3-x64.dll`
- * `php_curl.dll`
  * `php_gd.dll`
  * `php.exe`
  * `php-win.exe`
