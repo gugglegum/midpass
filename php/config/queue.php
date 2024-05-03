@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'email' => getenv('EMAIL'),
-    'password' => getenv('PASSWORD'),
-    'countryId' =>  getenv('COUNTRY_ID'),
-    'serviceProviderId' => getenv('SERVICE_PROVIDER_ID'),
+    'email' => $_ENV['EMAIL'],
+    'password' => $_ENV['PASSWORD'],
+    'countryId' =>  $_ENV['COUNTRY_ID'],
+    'serviceProviderId' => $_ENV['SERVICE_PROVIDER_ID'],
 ];

@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'timezone' => getenv('TIMEZONE'),
+    'timezone' => $_ENV['TIMEZONE'],
 ];
