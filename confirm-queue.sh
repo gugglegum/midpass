@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Путь к исполняемому файлу PHP, относительно текущей директории скрипта
 PHP_BIN="$(dirname "$(readlink -f "$0")")/bin/php"
